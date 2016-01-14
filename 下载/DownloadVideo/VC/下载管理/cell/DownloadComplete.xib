@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="DownloadComplete">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05r-d3-2lK">
+                        <rect key="frame" x="76" y="8" width="236" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AFx-9c-tp1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-iW-0oM">
+                        <rect key="frame" x="76" y="47" width="236" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Hb5-KG-guc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Llc-HD-xqe">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="SYr-Ah-nSm"/>
+                            <constraint firstAttribute="width" constant="60" id="qyN-Eq-02i"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gdW-iW-0oM" secondAttribute="trailing" constant="8" id="6xG-QB-oo5"/>
+                    <constraint firstItem="Llc-HD-xqe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Kti-TS-ynp"/>
+                    <constraint firstAttribute="trailing" secondItem="05r-d3-2lK" secondAttribute="trailing" constant="8" id="LAw-sg-dI0"/>
+                    <constraint firstItem="gdW-iW-0oM" firstAttribute="leading" secondItem="Llc-HD-xqe" secondAttribute="trailing" constant="8" id="VHR-zb-AHf"/>
+                    <constraint firstItem="05r-d3-2lK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YhN-jI-Upb"/>
+                    <constraint firstItem="Llc-HD-xqe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="nh0-oV-i1N"/>
+                    <constraint firstItem="05r-d3-2lK" firstAttribute="leading" secondItem="Llc-HD-xqe" secondAttribute="trailing" constant="8" id="yU5-W1-wr5"/>
+                    <constraint firstItem="gdW-iW-0oM" firstAttribute="top" secondItem="05r-d3-2lK" secondAttribute="bottom" constant="18" id="zrc-qi-arg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="fileIcon" destination="Llc-HD-xqe" id="A01-bL-hBh"/>
+                <outlet property="fileName" destination="05r-d3-2lK" id="ccw-7v-PEd"/>
+                <outlet property="fileSize" destination="gdW-iW-0oM" id="Ift-eG-i4w"/>
+            </connections>
+            <point key="canvasLocation" x="563" y="397"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="2.jpg" width="1024" height="768"/>
+    </resources>
+</document>
